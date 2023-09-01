@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,600;1,400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    min-width: 20rem;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+button {
+    cursor: pointer;
+    background-color: transparent;
+    color: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+/*-------------------------------------------------*/
+/* Default styles */
+body {
+    position: relative;
+    font-family: 'Bitter', serif;
+    font-weight: 400;
+    font-size: 1rem;
+    background-color: #fff;
+    
+}
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    background-image: url("https://images.unsplash.com/photo-1515847049296-a281d6401047?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.page {
+    z-index: 50;
+}
+[class*="__container"] {
+    max-width: 52.5rem;
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+    margin: 40px auto;
+}
+
+
+/* Header */
+.header {
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 auto;
+    flex: 1 1 auto;
+    width: 70vw;
+    height: 70vh;
+    border-radius: 2.1875rem;
+    background-color: #EDFFC8;
+    border: 0.125rem solid rgba(230,0,0,0.7);
+}
+.page-header__input{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.page__title {
+    font-family: 'Bitter', serif;
+    font-weight: 600;
+    align-items: center;
+    font-size: 1.875rem;
+    padding: 0.9375rem 0;
+    color: #fff;
+}
+.page-input__body {
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+.page-input__label {
+}
+.page-input__input {
+    font-family: 'Bitter', serif;
+    font-weight: 400;
+    text-align: center;
+    margin: 10px;
+    width: 18.75rem; /* Set the width of the input box */
+    height: 2.5rem; /* Set the height of the input box */
+    padding: 0.625rem; /* Add padding to give some space inside the input box */
+    border: 0.125rem solid rgba(230,0,0,0.7); /* Add a border to the input box */
+    border-radius: 1.875rem; /* Round the corners of the input box */
+    font-size: 1rem; /* Set the font size of the text inside the input box */
+    color: #333; /* Set the text color */
+    outline: none; /* Remove the default outline when the input is focused */
+    background-color: #EDFFC8;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+.page-input__buttons {
+}
+.page-input__button {
+    border-radius: 1.875rem;
+    border: 0.125rem solid antiquewhite;
+    background-color: #9994B3;
+    color: white;
+    font-size: 0.9375rem;
+    background-color: rgba(255,0,0,0.8);
+}
+.page__hr {
+    border: none;
+    height: 0.0625rem;
+    background-color: red;
+    margin: 5px 1.25rem 0 1.25rem;
+}
+.main-page__container {
+}
+.main-page__content {
+}
+.main-page__tasks {
+}
+.tasks__scrollbar {
+}
+
+@media (max-width: 320px) {
+    .page-input__body {
+        font-size: 14px;
+    }
+    .page-input__input {
+        max-width: 180px;
+        font-size: 14px;
+    }
+    .page-input__buttons {
+        display: flex;
+        justify-content: space-around;
+    }
+    .page-input__button {
+        border-radius: 1.875rem;
+        border: 0.125rem solid antiquewhite;
+        background-color: #9994B3;
+        color: white;
+        font-size: 12px;
+        background-color: rgba(255,0,0,0.8);
+        width: 70px;
+        height: 30px;
+    }
+    .page__hr {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+}
