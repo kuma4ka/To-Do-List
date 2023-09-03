@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>To-Do List</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="page__title">
+                <h1>To-Do List</h1>
+            </div>
+        </header>
+        <main class="page">
+            <div class="page-header__input">
+                <div class="page-input__body">
+                    <label for="input-task" class="page-input__label">
+                        Task to do:
+                        <input id="input-task" class="page-input__input" type="text" placeholder="Wash hands..." autofocus>
+                    </label>
+                </div>
+                <div class="page-input__buttons">
+                    <button class="page-input__button" type="button" onclick="addTask()">Add</button>
+                    <button class="page-input__button" type="button" onclick="clearTasks()">Clear tasks</button>
+                </div>
+                <hr class="page__hr">
+            </div>
+            <div class="main-page__container">
+                <div class="main-page__content">
+                    <div class="main-page__tasks">
+                        <ul id="list-task" class="tasks__scrollbar"></ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+
+        </footer>
+    </div>
+<script src="script/script.js"></script>
+</body>
+</html>
