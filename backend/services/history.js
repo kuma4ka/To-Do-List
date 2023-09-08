@@ -12,6 +12,7 @@ class History {
     }
 
 }
-const instanceHistory = new History();
 
-module.exports = instanceHistory;
+module.exports = {
+    instanceHistory : new History(),
+};

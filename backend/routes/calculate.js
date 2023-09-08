@@ -1,27 +1,27 @@
 const express = require('express');
 const router = express.Router();
 
-const Calculator = require('../services/calculator');
-const History = require('../services/history');
+const сalculator = require('../services/calculator');
+const { instanceHistory } = require('../services/history');
 
-router.post('/calculate/add', (req, res) => {
+router.post('/add', (req, res) => {
     const { a1, a2 } = req.body;
-    const sum = Calculator.add(a1, a2);
-    History.add(JSON.stringify(sum));
+    const sum = сalculator.add(a1, a2);
+    instanceHistory.add(JSON.stringify(sum));
     res.json(sum);
 });
 
-router.post('/calculate/minus', (req, res) => {
+router.post('/minus', (req, res) => {
     const { a1, a2 } = req.body;
-    const difference = Calculator.minus(a1, a2);
-    History.add(JSON.stringify(difference));
+    const difference = сalculator.minus(a1, a2);
+    instanceHistory.add(JSON.stringify(difference));
     res.json(difference); 
 });
 
-router.post('/calculate/multiply', (req, res) => {
+router.post('/multiply', (req, res) => {
     const { a1, a2 } = req.body;
-    const product = Calculator.multiply(a1, a2);
-    History.add(JSON.stringify(product));
+    const product = сalculator.multiply(a1, a2);
+    instanceHistory.add(JSON.stringify(product));
     res.json(product);
 });
 

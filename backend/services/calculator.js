@@ -1,17 +1,15 @@
 class Calculator {
-    add(a1, a2) {
+    static add(a1, a2) {
         return { result: a1 + a2 };
     }
 
-    minus(a1, a2) {
+    static minus(a1, a2) {
         return { result: a1 - a2 };
     }
 
-    multiply(a1, a2) {
+    static multiply(a1, a2) {
         return { result: a1 * a2 };
     }
 }
 
-const instanceCalculator = new Calculator();
-
-module.exports = instanceCalculator;
+module.exports = Calculator;
