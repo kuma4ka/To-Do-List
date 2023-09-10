@@ -5,11 +5,9 @@ const PORT = 3000;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const healthRouter = require('./routes/health');
-const calculateRouter = require('./routes/calculate');
+const routes = require('./routes/index');
 
-app.use("/health", healthRouter);
-app.use("/calculate", calculateRouter);
+app.use(routes);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
